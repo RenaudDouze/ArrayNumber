@@ -8,7 +8,6 @@ class ArrayNumber {
      * @param int[] $arrayNumber
      * 
      * @return int[]
-     * 
     **/
     public static function increment(array $arrayNumber): array
     {
@@ -35,6 +34,7 @@ class ArrayNumber {
     }
 }
 
+// Some unit tests
 if ([1, 2, 4] !== ArrayNumber::increment([1, 2, 3])) {
     throw new \RuntimeException('Ton code fonctionne pas');
 }
